@@ -19,9 +19,5 @@ class BlogSerializer(serializers.ModelSerializer):
         if len(data) == 0:
             raise serializers.ValidationError("You must choose at least one tag")
 
-        for i in data:
-            if data[i] == 0:
-                raise serializers.ValidationError("You must choose a valid tag")
-                
         return data
 

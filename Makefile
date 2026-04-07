@@ -5,4 +5,4 @@ migrate:
 admin:
 	docker compose exec web uv run python manage.py createsuperuser
 py:
-	docker compose exec -it web uv run python manage.py shell
+	docker compose exec -it web uv run python manage.py shell_plus
